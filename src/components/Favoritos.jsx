@@ -9,6 +9,7 @@ export const Favoritos = () => {
 
   if (favoritos.length === 0) {
     return <p>Aún no tienes monedas favoritas. Dale corazón a una moneda en Home.</p>
+    
   }
 
   return (
