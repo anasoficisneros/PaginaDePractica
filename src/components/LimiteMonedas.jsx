@@ -7,7 +7,6 @@ export const LimiteMonedas = ({ limite, setLimite }) => {
       <h4>Mostrar: {limite} monedas</h4>
 
       <Button variant="outlined" onClick={() => setLimite(10)}>10</Button>
-      <Button variant="outlined" onClick={() => setLimite(25)}>25</Button>
       <Button variant="outlined" onClick={() => setLimite(50)}>50</Button>
       <Button variant="outlined" onClick={() => setLimite(100)}>100</Button>
     </div>

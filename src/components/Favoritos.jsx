@@ -8,7 +8,7 @@ export const Favoritos = () => {
   const { favoritos } = useContext(ContextFavoritos);
 
   if (favoritos.length === 0) {
-    return <p>Aún no tienes monedas favoritas. Dale ❤ a una moneda en Home.</p>
+    return <p>Aún no tienes monedas favoritas. Dale corazón a una moneda en Home.</p>
   }
 
   return (
@@ -22,7 +22,8 @@ export const Favoritos = () => {
             <a style={{ cursor: 'pointer', color: '#6a1b9a' }} onClick={() => navigate("/detail/" + fav.id)}>
               <p>{fav.nombre} - ${fav.valor}</p>
             </a>
-            {/* Al darle click aquí se quita de favoritos */}
+          
+            {/*Al darle click aquí se quita de favoritos */}
             <BotonMeGusta coin={fav} />
           </div>
         )
